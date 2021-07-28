@@ -1,30 +1,35 @@
-{% if include.embedded != nil %}
-<ul class="list">
-{% else %}
-<ul class="list primary">
-{% endif %}
-    {% for item in include.nav %}
-        <li class="item">
-
-            <div class="item-controls">
-                <a href="{{ site.url }}/{{ item.url }}">
-                {% if item.icon != nil %}
-                    <img src="{{ site.url }}/{{ item.icon }}"/>
-                {% endif %}
-                {% if item.hue != nil %}
-                    <p style="color: {{ item.hue }}">{{ item.title }}</p>
-                {% else %}
-                    <p>{{ item.title }}</p>
-                {% endif%}
-                </a>
-
-            {% if item.subnav %}
-                <a class="button-submenu" href="#"><i class="arrow"></i></a>
+   <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">{{ site.title }}</a>
             </div>
-                {% include nav.html nav=item.subnav embedded=true %}
-            {% else %}
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            {% endif %}
-        </li>   
-    {% endfor %}
-</ul>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
