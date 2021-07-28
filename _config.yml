@@ -4,7 +4,8 @@ favicon: /assets/favicon.ico
 description: description
 global_tags: jekyll theme simplex golasblog responsive html5
 copyright: © Golasowski 2021
-
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://koreahouseinfo.github.io/" # the base hostname & protocol for your site
 sass:
     style: compressed
 
