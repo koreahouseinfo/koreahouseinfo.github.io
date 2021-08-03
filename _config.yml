@@ -52,8 +52,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 경기도 성남시 분당구 성남대로 331번길 8 #3481 Melrose Place
+  - line: 정자동, 킨스타워 19층 # Beverly Hills, CA 90210
 
 # Credits content
 credits: 'Theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
